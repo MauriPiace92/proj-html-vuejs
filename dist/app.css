@@ -4,4 +4,75 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Khula", sans-serif;
+}
 
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 65%;
+  margin: auto;
+}
+
+.shadow {
+  box-shadow: 5px 0px 10px lightgray;
+}
+
+header {
+  padding: 20px 0;
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .logo {
+  width: 14%;
+  display: inline-block;
+  margin-right: 50px;
+}
+header .nav-bar {
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+}
+header .nav-bar ul {
+  list-style-type: none;
+}
+header .nav-bar ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+header .nav-bar ul li a {
+  text-decoration: none;
+  color: #2c3837;
+  font-weight: bold;
+}
+header .nav-bar ul li a i {
+  font-size: 10px;
+  color: #2c3837;
+}
+header i {
+  margin-right: 20px;
+  color: #2c3837;
+}
+header .input-search {
+  background-color: #f6f3f5;
+  border-radius: 5px;
+}
+header .input-search input {
+  padding: 10px 15px;
+  background-color: #f6f3f5;
+  border-radius: 5px;
+  border: none;
+  font-family: "Khula", sans-serif;
+}
+header .input-search input:focus {
+  outline: none;
+}
+header .input-search i {
+  color: #1fad96;
+}
