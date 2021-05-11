@@ -18,7 +18,7 @@ header{
     }
     .nav-bar{
         display: inline-block;
-        width: 60%;
+        width: 59%;
         text-align: right;
 
         ul{
@@ -69,6 +69,7 @@ header{
 
         i{
             color:$color_principal_green;
+            cursor: pointer;
         }
     }
 }

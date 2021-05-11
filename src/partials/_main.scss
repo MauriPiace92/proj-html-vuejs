@@ -1,0 +1,141 @@
+// section Jumbotron:
+.jumbotron::after{
+    @include clearfix;
+}
+
+.jumbotron{
+    
+
+    // left part of the section:
+
+    .left-part{
+        width: 50%;
+        float: left;
+        margin: 117px 0;
+    
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            width: 80%;
+            color:$color_title;
+            
+        }
+
+        h6{
+            font-size: 22px;
+            color:$shady_lady_color;
+            margin: 20px 0;
+        }
+
+        button{
+            @include Button-style;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color:$shady_lady_color;
+            font-weight: bold;
+            font-size: small;
+
+            span{ 
+                border-bottom: 1px solid $shady_lady_color;
+
+                a{
+                    color: $color_principal_green;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+
+
+
+    // right part of section;
+    .right-part{
+        width: 50%;
+        float: left;
+        margin-top: 67px;
+
+        .container-sec{
+            position: relative;
+            
+
+            .img-box{
+                width: 85%;
+                margin-left: 101px;              
+
+                img{
+                    border-radius: 50%;
+                    z-index: 0;
+                }
+        
+            }
+
+            .maxcoach-02{
+                width: 100px;
+                position: absolute;
+                top: 126px;
+                right: -109px;
+                z-index: 0;
+            }
+
+            .maxcoach-07{
+                width: 115px;
+                position: absolute;
+                bottom: 14px;
+                right: 8%;
+                z-index: -1;
+            }
+
+            .maxcoach-08{
+                width: 140px;
+                position: absolute;
+                bottom: 102px;
+                left: 40px;
+                z-index: -1;
+            }
+            .maxcoach-09{
+                width: 140px;
+                position: absolute;
+                top: 162px;
+                left: 40px;
+                z-index: -1;
+            }
+            .circle-img{
+                position: absolute;
+                bottom: 88px;
+                left: 75px;
+                z-index: 2;
+                font-size: 66px;
+                color: #c99f8e;
+            }
+        }
+    }
+
+}
+.row-under{
+        
+    display: flex;
+    align-items: center;
+     flex-wrap: nowrap;
+    
+    .single-img{
+        width: calc( 100% / 6 );
+
+        img{
+            object-fit: none;
+        }
+    }
+    
+}
+// End section jumbotron
+.courses{
+    background-color:$background_hint_red;
+
+    // TEST 
+    height: 600px;
+}
+
+
+

@@ -1,0 +1,15 @@
+@mixin clearfix{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+@mixin Button-style{
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: $color_principal_green;
+    color: white;
+    border: none;
+
+}
