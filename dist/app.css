@@ -74,7 +74,7 @@ header .input-search input:focus {
   outline: none;
 }
 header .input-search i {
-  color: #1fad96;
+  color: #5df0c8;
   cursor: pointer;
 }
 
@@ -104,10 +104,18 @@ header .input-search i {
   padding: 10px 30px;
   font-weight: bold;
   border-radius: 5px;
-  background-color: #1fad96;
+  background-color: #5df0c8;
   color: white;
   border: none;
   margin-bottom: 20px;
+}
+.jumbotron .left-part button:hover {
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #48495f;
+  color: white;
+  border: none;
 }
 .jumbotron .left-part p {
   color: #aeadae;
@@ -118,7 +126,7 @@ header .input-search i {
   border-bottom: 1px solid #aeadae;
 }
 .jumbotron .left-part p span a {
-  color: #1fad96;
+  color: #5df0c8;
   text-decoration: none;
 }
 .jumbotron .right-part {
@@ -189,5 +197,226 @@ header .input-search i {
 
 .courses {
   background-color: #f6f3f5;
-  height: 600px;
+  padding: 50px 0;
+}
+.courses .title {
+  text-align: center;
+}
+.courses .title h6 {
+  text-transform: uppercase;
+  color: #aeadae;
+  font-size: 13px;
+}
+.courses .title h2 {
+  color: #48495f;
+  font-size: 25px;
+}
+.courses .box-prices {
+  content: "";
+  display: table;
+  clear: both;
+}
+.courses .box-prices .single-course {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  float: left;
+  margin-top: 50px;
+  padding: 20px;
+}
+.courses .box-prices .single-course .img-box {
+  margin-right: 43px;
+}
+.courses .box-prices .single-course .img-box img {
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  width: 250px;
+}
+.courses .box-prices .description h4 {
+  font-size: 20px;
+  color: #5df0c8;
+  font-weight: bold;
+}
+.courses .box-prices .description h6 {
+  font-size: 17px;
+  color: #48495f;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.courses .box-prices .description p {
+  color: #2c3837;
+  font-size: 12px;
+}
+.courses .box-prices .description p span {
+  margin-left: 20px;
+}
+.courses .single-course:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+.courses .single-course:hover h6 {
+  color: #5df0c8;
+}
+
+.btn {
+  text-align: center;
+}
+.btn button {
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #5df0c8;
+  color: white;
+  border: none;
+  margin: 50px 0;
+}
+.btn button:hover {
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #48495f;
+  color: white;
+  border: none;
+}
+
+.smart-tutoring .title {
+  text-align: center;
+  margin: 59px 0;
+}
+.smart-tutoring .title h6 {
+  text-transform: uppercase;
+  color: #aeadae;
+  font-size: 13px;
+}
+.smart-tutoring .title h2 {
+  color: #48495f;
+  font-size: 25px;
+}
+.smart-tutoring .title h2 span {
+  color: #5df0c8;
+}
+.smart-tutoring .upper-part {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.smart-tutoring .upper-part .single-item {
+  width: calc( ( 100% / 3) - 30px);
+  padding: 20px;
+}
+.smart-tutoring .upper-part .single-item .img-container {
+  width: 50%;
+}
+.smart-tutoring .upper-part .single-item h4 {
+  font-size: 20px;
+  color: #48495f;
+  font-weight: bold;
+  margin: 25px 0;
+}
+.smart-tutoring .upper-part .single-item p {
+  color: #aeadae;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.smart-tutoring .upper-part .single-item a {
+  color: #48495f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.smart-tutoring .upper-part .single-item:hover {
+  background-color: #f6f3f5;
+  border-radius: 5px;
+}
+.smart-tutoring .upper-part .single-item:hover h4 {
+  color: #5df0c8;
+}
+.smart-tutoring .upper-part .single-item:hover a {
+  color: #5df0c8;
+}
+.smart-tutoring .downer-part {
+  margin: 120px 0;
+  display: flex;
+}
+.smart-tutoring .downer-part .img-box {
+  width: 50%;
+  position: relative;
+  border-radius: 5px;
+}
+.smart-tutoring .downer-part .img-box .youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart-tutoring .downer-part .img-box .bott-dx {
+  position: absolute;
+  bottom: -106px;
+  right: -13px;
+  z-index: -1;
+}
+.smart-tutoring .downer-part .img-box .top-sx-b {
+  position: absolute;
+  top: 66px;
+  left: -87px;
+  z-index: -1;
+}
+.smart-tutoring .downer-part .img-box .cloud-top-sx {
+  position: absolute;
+  font-size: 143px;
+  top: -95px;
+  left: -54px;
+  z-index: -2;
+  color: #ffbe6b;
+}
+.smart-tutoring .downer-part .img-box .circle-img {
+  position: absolute;
+  top: -55px;
+  right: -104px;
+  font-size: 66px;
+  color: #c99f8e;
+}
+.smart-tutoring .downer-part .companionship {
+  padding: 45px 60px;
+  width: 34%;
+}
+.smart-tutoring .downer-part .companionship h6 {
+  text-transform: uppercase;
+  color: #aeadae;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.smart-tutoring .downer-part .companionship h6 span {
+  color: #48495f;
+  font-weight: bold;
+}
+.smart-tutoring .downer-part .companionship h2 {
+  color: #48495f;
+  font-size: 27px;
+  font-weight: bold;
+}
+.smart-tutoring .downer-part .companionship h2 span {
+  color: #5df0c8;
+  font-weight: lighter;
+}
+.smart-tutoring .downer-part .companionship p {
+  color: #aeadae;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+.smart-tutoring .downer-part .companionship .link {
+  border-bottom: 1px solid #aeadae;
+  width: 75%;
+}
+.smart-tutoring .downer-part .companionship .link a {
+  color: #5df0c8;
+  font-weight: bold;
+  text-decoration: none;
 }

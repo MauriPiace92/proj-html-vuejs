@@ -13,3 +13,13 @@
     border: none;
 
 }
+
+@mixin Button-style-hover{
+
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: $color_title;
+    color: white;
+    border: none;
+}

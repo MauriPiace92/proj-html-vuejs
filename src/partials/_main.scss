@@ -31,6 +31,9 @@
             @include Button-style;
             margin-bottom: 20px;
         }
+        button:hover{
+            @include Button-style-hover;
+        }
 
         p{
             color:$shady_lady_color;
@@ -130,12 +133,283 @@
     
 }
 // End section jumbotron
+// section courses
 .courses{
     background-color:$background_hint_red;
+    padding: 50px 0;
 
-    // TEST 
-    height: 600px;
+    .title{
+        text-align: center;
+        h6{
+            text-transform: uppercase;
+            color:$shady_lady_color;
+            font-size: 13px;
+        }
+
+        h2{
+            color:$color_title;
+            font-size: 25px;
+        }
+
+    }
+    .box-prices{
+        @include clearfix;
+
+        .single-course{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            float: left;
+            margin-top: 50px;
+            padding:20px;
+
+
+            .img-box{
+                margin-right: 43px;
+
+                img{
+                    border-radius: 50%;
+                    object-fit: contain;
+                    object-fit: cover;
+                    height: 250px;
+                    width: 250px;                }
+                }
+            }
+            .description{
+
+                h4{
+                    font-size: 20px;
+                    color: $color_principal_green;
+                    font-weight: bold;
+
+                }
+
+                h6{
+                    font-size: 17px;
+                    color: #48495f;
+                    font-weight: bold;
+                    margin: 20px 0;
+                }
+
+                p{
+                    color: $color_outer_space;
+                    font-size: 12px;
+
+                    span{
+                        margin-left:20px;
+                    }
+                }
+            }
+        }
+        .single-course:hover{
+            background-color: white;
+            border-radius: 5px;
+
+            h6{
+                color:$color_principal_green;
+            }
+
+
+
+        }
+    }
+    
+    .btn{
+        text-align: center;
+
+        button{
+            @include Button-style;
+            margin: 50px 0;
+        
+        }
+
+        button:hover{
+            @include Button-style-hover;
+        }
+          
+    }
+// end section courses
+
+// section smart-tutoring
+.smart-tutoring{
+    
+
+    .title{
+        text-align: center;
+        margin: 59px 0;
+        h6{
+            text-transform: uppercase;
+            color:$shady_lady_color;
+            font-size: 13px;
+        }
+
+        h2{
+            color:$color_title;
+            font-size: 25px;
+            span{
+                color:$color_principal_green;
+            }
+
+        }
+
+    }
+
+    .upper-part{
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .single-item{
+            width: calc( ( 100% / 3) - 30px);
+            padding: 20px;
+
+            .img-container{
+                width: 50%;
+            }
+
+            h4{
+                font-size: 20px;
+                color: $color_title;
+                font-weight: bold;
+                margin: 25px 0;
+
+            }
+
+            p{
+                color:$shady_lady_color;
+                font-size: 17px;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+
+            a{
+                color:$color_title;
+                text-decoration: none;
+                font-weight: bold;
+                font-size:15px;
+                margin-top: 25px;
+            }
+
+
+
+        }
+
+        .single-item:hover{
+            background-color: $background_hint_red;
+            border-radius: 5px;
+
+            h4{
+                color: $color_principal_green;
+            }
+
+            a{
+                color: $color_principal_green;
+            }
+
+        }
+
+    }
+
+    .downer-part{
+        margin: 120px 0;
+        display: flex;
+        
+
+        .img-box{
+            width: 50%;
+            position: relative;
+            border-radius: 5px;
+
+            .youtube{
+                position:absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
+            .bott-dx{
+                position: absolute;
+                bottom: -106px;
+                right: -13px;
+                z-index: -1;
+            }
+
+            .top-sx-b{
+                position: absolute;
+                top: 66px;
+                left: -87px;
+                z-index: -1;
+            }
+            .cloud-top-sx{
+                position: absolute;
+                font-size: 143px;
+                top: -95px;
+                left: -54px;
+                z-index: -2;
+                color: $color-cloud;
+
+            }
+            .circle-img{
+                position: absolute;
+                top: -55px;
+                right: -104px;
+                font-size: 66px;
+                color: #c99f8e;
+            }
+
+        }
+        .companionship{
+            padding: 45px 60px;
+            width: 34%;
+            h6{
+                text-transform: uppercase;
+                color:$shady_lady_color;
+                font-size: 13px;
+                font-weight: lighter;
+                span{
+                    color:$color_title;
+                    font-weight:bold;
+                }
+            }
+
+            h2{
+                color:$color_title;
+                font-size: 27px;
+                font-weight: bold;
+                span{
+                    color:$color_principal_green;
+                    font-weight: lighter;
+                }
+            }
+            p{
+                color:$shady_lady_color;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 25px 0;
+            }
+
+            .link{
+                border-bottom: 1px solid $shady_lady_color;
+                width: 75%;
+                a{
+                    color: $color_principal_green;
+                    font-weight:bold; 
+                    text-decoration: none;
+
+                }
+            }
+
+        }
+        
+    }
+
+
 }
+
+
+  
+
+
+
 
 
 
