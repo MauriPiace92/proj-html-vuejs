@@ -599,3 +599,78 @@ main {
   color: #2c3837;
   font-size: 13px;
 }
+
+.most-viewed {
+  background-color: #f4f0ec;
+}
+.most-viewed .tables {
+  width: 100%;
+  display: flex;
+  padding: 50px 0;
+}
+.most-viewed .tables .title-table {
+  width: calc( 100% / 3);
+  padding: 20px;
+  margin: 20px;
+}
+.most-viewed .tables .title-table h6 {
+  text-transform: uppercase;
+  color: #2c3837;
+  font-size: 13px;
+}
+.most-viewed .tables .title-table h2 {
+  color: #48495f;
+  font-size: 28px;
+  margin: 20px 0;
+}
+.most-viewed .tables .title-table h2 span {
+  color: #1fad96;
+  font-weight: small;
+}
+.most-viewed .tables .title-table ul {
+  list-style-type: none;
+}
+.most-viewed .tables .title-table ul li {
+  color: #48495f;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.most-viewed .tables .title-table ul li i {
+  margin-right: 20px;
+}
+.most-viewed .tables .img-table {
+  width: calc( 100% / 3);
+  margin: 20px;
+  background-color: white;
+}
+.most-viewed .tables .img-table .table-img {
+  width: 100%;
+  height: 250px;
+}
+.most-viewed .tables .img-table .table-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.most-viewed .tables .img-table .table-description {
+  padding: 20px;
+}
+.most-viewed .tables .img-table .table-description h6 {
+  text-transform: uppercase;
+  color: #aeadae;
+  font-size: 13px;
+}
+.most-viewed .tables .img-table .table-description h3 {
+  color: #48495f;
+  font-size: 23px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.most-viewed .tables .img-table .table-description .post-datas {
+  font-size: 13px;
+  color: #aeadae;
+}
+.most-viewed .tables .img-table .table-description .post-datas span {
+  margin-right: 20px;
+}
