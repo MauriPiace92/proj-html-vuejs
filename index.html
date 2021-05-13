@@ -758,14 +758,76 @@
         <!-- END MAIN -->
         <!-- FOOTER -->
         <footer>
-            <div class="container">
-                <ul class="address">
+            <div class="wrapper">
+                <div class="footer-container">
+                    <div class="container-left">
+                        <ul class="address">
 
-                    <li><strong>Address</strong></li>
-                    <li> 382 NE 191St#87394 Miami, FL 33179-3899</li>
-                    <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday) </li> 
-                    
-                </ul>
+                            <li><strong>Address</strong></li>
+                            <li> 382 NE 191St#87394 Miami, FL 33179-3899</li>
+                            <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday) </li> 
+                            <li>suport@maxcoach.com</li>
+                            
+                        </ul>
+                        <div class="socials">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="container-right">
+                        <ul class="explore">
+
+                            <li><strong>Explore</strong></li>
+                            <li v-for="list in explore">
+                                <a :href="list.link">{{list.name}}</a>
+                            </li>
+                            
+                        </ul>
+
+                        <ul class="empty">
+
+                            <li><strong> </strong></li>
+                            <li v-for="link in empty">
+                                <a :href="link.link">{{link.name}}</a>
+                            </li>
+                            
+                        </ul>
+
+                        <ul class="information">
+
+                            <li><strong>information</strong></li>
+                            <li v-for="list in information">
+                                <a :href="list.link">{{list.name}}</a>
+                            </li>
+                            
+                        </ul>
+                        
+
+                    </div>
+                </div>
+                <div class="end-footer">
+                    <i class="far fa-copyright"></i>
+                    2020 Maxcoach. All Rights Reserved
+
+                    <div class="circle-start">
+                        <a href="file:///C:/Boolean/Repo/proj-html-vuejs/index.html">
+                            <i class="fas fa-arrow-circle-up"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Fixed -->
+            <div class="fixed">
+                <i class="fas fa-ruler-combined"></i>
+                <i class="far fa-life-ring"></i>
+                <i class="fas fa-book"></i>
+                <i class="fas fa-shopping-cart"></i>
 
             </div>
 
