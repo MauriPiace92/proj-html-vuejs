@@ -32,43 +32,10 @@
                 <!-- nav-bar -->
                 <div class="nav-bar">
                     <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
+                        <li v-for="link in menu">
+                            <a :href="link.link">{{link.name}} <i :class= "link.class"></i></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                                
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Home
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- end nav-bar -->
@@ -752,16 +719,59 @@
 
                 <!-- section Subscribe -->
                 <section class="subscribe">
+                    <div class="wrapper">
+                        <div class="text">
+                            <h2>Subscribe <span>Newsletters</span></h2>
+                            <p>
+                                Enter your email to register to our newsletter 
+                                subscription <br> delivered on a regular basis!
+                            </p>
+
+                            <div class="compiled-part">
+                                <label for="email"></label>
+                                <input id="email" type="email"placeholder="Enter you email" >
+                                <button>Subscribe</button>
+
+                            </div>
+
+                            <div class="img-back">
+
+                                <div class="circle-img">
+                                    <i class="far fa-circle"></i>
+                                </div>
+
+                                <div class="img-1">
+                                    <img src="img/maxcoach-shape-09.png" alt="">
+                                </div>
+
+                                <div class="img-2">
+                                    <img src="img/maxcoach-shape-02.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </section>
                 <!--End section Subscribe -->
-
-
-
-            
-
         </main>
         <!-- END MAIN -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <ul class="address">
+
+                    <li><strong>Address</strong></li>
+                    <li> 382 NE 191St#87394 Miami, FL 33179-3899</li>
+                    <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday) </li> 
+                    
+                </ul>
+
+            </div>
+
+
+        </footer>
+        <!-- END FOOTER -->
 
     
 
