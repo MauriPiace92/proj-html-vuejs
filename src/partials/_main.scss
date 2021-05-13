@@ -1,9 +1,15 @@
+main{
+    background-color: $background_hint_red;
+}
 // section Jumbotron:
+
 .jumbotron::after{
     @include clearfix;
 }
 
 .jumbotron{
+    background-color: white;
+    @include clearfix;
     
 
     // left part of the section:
@@ -67,70 +73,73 @@
             .img-box{
                 width: 85%;
                 margin-left: 101px;              
+                .img-principal{
+                    z-index: 2;
 
-                img{
-                    border-radius: 50%;
-                    z-index: 0;
+                    #principal{
+                        border-radius: 50%;
+                    }
                 }
         
-            }
+            
 
-            .maxcoach-02{
-                width: 100px;
-                position: absolute;
-                top: 126px;
-                right: -109px;
-                z-index: 0;
-            }
+                .maxcoach-02{
+                    width: 100px;
+                    position: absolute;
+                    top: 126px;
+                    right: -109px;
+                    z-index: 0;
+                }
 
-            .maxcoach-07{
-                width: 115px;
-                position: absolute;
-                bottom: 14px;
-                right: 8%;
-                z-index: -1;
-            }
+                .maxcoach-07{
+                    width: 115px;
+                    position: absolute;
+                    bottom: 14px;
+                    right: 8%;
+                    z-index: 0;
+                }
 
-            .maxcoach-08{
-                width: 140px;
-                position: absolute;
-                bottom: 102px;
-                left: 40px;
-                z-index: -1;
-            }
-            .maxcoach-09{
-                width: 140px;
-                position: absolute;
-                top: 162px;
-                left: 40px;
-                z-index: -1;
-            }
-            .circle-img{
-                position: absolute;
-                bottom: 88px;
-                left: 75px;
-                z-index: 2;
-                font-size: 66px;
-                color: #c99f8e;
+                .maxcoach-08{
+                    width: 140px;
+                    position: absolute;
+                    bottom: 102px;
+                    left: 40px;
+                    z-index: 0;
+                }
+                .maxcoach-09{
+                    width: 140px;
+                    position: absolute;
+                    top: 162px;
+                    left: 40px;
+                    z-index: 0;
+                }
+                .circle-img{
+                    position: absolute;
+                    bottom: 88px;
+                    left: 75px;
+                    z-index: 1;
+                    font-size: 66px;
+                    color: #c99f8e;
+                }
             }
         }
     }
-
-}
-.row-under{
+    .row-under{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
         
-    display: flex;
-    align-items: center;
-     flex-wrap: nowrap;
+        .single-img{
+            width: calc( 100% / 6 );
     
-    .single-img{
-        width: calc( 100% / 6 );
-
-        img{
-            object-fit: none;
+            img{
+                object-fit: none;
+            }
         }
+        
     }
-    
+
 }
 // End section jumbotron
 // section courses
@@ -232,6 +241,9 @@
 
 // section smart-tutoring
 .smart-tutoring{
+    padding: 40px;
+    background-color: white;
+    border-bottom-right-radius:40% ;
     
 
     .title{
@@ -319,6 +331,7 @@
             width: 50%;
             position: relative;
             border-radius: 5px;
+            z-index: 2;
 
             .youtube{
                 position:absolute;
@@ -401,9 +414,209 @@
         }
         
     }
+}
+// END section smart-tutoring
 
+// Section Slider:
+.section-slider{
+    background-color: $background_hint_red;
+    padding: 50px 0;
+    .title{
+        text-align: center;
+        margin: 59px 0;
+        h6{  
+            text-transform: uppercase;
+            color:$shady_lady_color;
+            font-size: 13px;
+        }
+
+        h2{
+            color:$color_title;
+            font-size: 25px;
+            span{
+                color:$color_principal_green;
+            }
+
+        }
+
+    }
+    .slider{
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+
+        
+        .single-card{
+            position: relative;
+            padding: 30px;
+            margin: 40px;
+            width: ( ( 100% / 3 )  -50px );
+            background-color: white;
+            border-radius: 10px;
+
+        
+
+            h3{
+                color: #48495f;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            p{
+                color: $color_outer_space;
+                margin: 25px 0;
+                font-weight: 800;
+            }
+
+            .person-profile{
+                
+                display: flex;
+                align-items: center;                
+
+                .profile-img{
+                    width: 100px;
+                    margin-right:25px ;
+                    img{
+                        border-radius: 50%;
+                        
+                    }
+                }
+                .profile-name{
+
+                    h4{
+                        text-transform: uppercase;
+                        color:$color_title;
+                    }
+
+                    p{
+                        font-size: 13px;
+                    }
+
+                }
+
+            }
+
+        
+            
+        }
+        .overlay{
+           opacity: 0.5;
+        }
+    }
+    .point{
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .bigger-point{
+            color: $color_title;
+            font-size:15px;
+            margin: 0 10px;
+        }
+
+        .little-point{
+            font-size: 10px;
+            color: $color_title;
+            opacity:0.5;
+            margin: 0 10px;
+
+        }
+    }
+
+    .title-down{
+        text-align: center;
+        margin: 89px 0;
+        h5{  
+            color:$color_title;
+            font-size: 20px;
+            span{
+                color:$color_principal_green;
+            }
+        }
+
+        h2{
+            color:$color_title;
+            font-size: 28px;
+
+        }
+        button{
+            @include Button-style;
+            margin-top:30px;
+        }
+
+        .images{
+            width: 100%;
+            position:relative;
+
+            .img-1{
+                width: 100px;
+                position: absolute;
+                top: -73px;
+                left: 23%;
+            }
+            .img-2{
+                width: 100px;
+                position: absolute;
+                top: -73px;
+                right: 23%;
+            }
+            .circle-img{
+                position: absolute;
+                top: -120px;
+                left: 22%;
+                font-size: 34px;
+                color: #c99f8e;
+                opacity: 0.2;
+            }
+        }
+
+
+
+
+    }
+}
+// end section slider:
+// Section Stats
+.stats{
+    background-color: white;
+    
+    .stats-cards{
+        width: 100%;
+        border-right:5px solid $background_hint_red;
+        display: flex;
+
+        .stats-card{
+            text-align: center;
+            border-left:5px solid $background_hint_red;
+            width: calc( 100% / 4);
+            padding: 55px;
+            h5{
+                color:$color_title;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            h2{
+                font-size:50px;
+                color: $color_principal_green;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            h6{
+                text-transform: uppercase;
+                color:$color_outer_space;
+                font-size: 13px;
+            }
+        }
+
+
+    }
 
 }
+//End Section Stats
+// section most-viewed
+
+
 
 
   
